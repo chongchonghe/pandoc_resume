@@ -1,7 +1,7 @@
 Chong-Chong He
 ============
 
-----
+<!-- ---- -->
 
 > University of Maryland, Department of Astronomy<br>
 > 1113 PSC Bldg. 415<br>
@@ -9,7 +9,7 @@ Chong-Chong He
 > 
 > chongchong&#64;astro.umd.edu &nbsp;&nbsp;[https://chongchonghe.github.io/](https://chongchonghe.github.io/)
 
-----
+<!-- ---- -->
 
 Education
 ---------
@@ -37,31 +37,27 @@ Education
 Honors \& Awards
 ----------
 
-2019
-:   **Member**, American Astronomical Society
+2019 &emsp; **Member**, American Astronomical Society
 
-2016
-:   **Dean's Honored Graduates**, Jilin University
+2016 &emsp; **Dean's Honored Graduates**, Jilin University
 
-	&emsp; <span style="font-size:0.9em"> The highest honor awarded to graduating seniors in the college</span>
+&emsp; &emsp; &emsp; &emsp; &emsp; <span style="font-size:0.9em"> The highest honor awarded to graduating seniors in the college</span>
 
-2016
-:   **China Youth Science and Technology Innovation Award**, China Youth League 
+2016 &emsp; **China Youth Science and Technology Innovation Award**, China Youth League 
 <!-- Ref: Translation: https://thesmalab.com/2014/09/07/the-9th-china-youth-science-and-technology-innovation-award/ -->
 
-2016
-:   **Tang-Ao Qing Supreme Award for Excellence in Research \& Practice**
+2016 &emsp; **Tang-Ao Qing Supreme Award for Excellence in Research \& Practice**
 
-	&emsp; <span style="font-size:0.9em"> Awarded to 1/160 in the Tang-Ao Qing program, Jilin
+&emsp; &emsp; &emsp; &emsp; &emsp; <span style="font-size:0.9em">
+	Awarded to 1/160 in the Tang-Ao Qing program, Jilin
 	University</span>
 	
-2015
-:   **National Scholarship**
+2015 &emsp; **National Scholarship**
 
-2014
-:   **Scholarship for Overseas Study**, China Scholarship Council 
+2014 &emsp; **Scholarship for Overseas Study**, China Scholarship Council 
 
-	&emsp; <span style="font-size:0.9em"> Awarded to 2/270 in the College of Physics, Jilin
+&emsp; &emsp; &emsp; &emsp; &emsp; <span style="font-size:0.9em">
+	Awarded to 2/270 in the College of Physics, Jilin
 	University</span>
 	
 Publications
@@ -118,7 +114,7 @@ office hours to provide additional guidance to students.
 
 * Fall 2016 - Spring 2018, ASTR 420, ASTR 330, ASTR 300, ASTR 340
 
-Computer Skills
+Skills and Professional Services
 ----------
 
 Programming Languages \& Softwares
@@ -141,22 +137,6 @@ Data Science
 
 - Basic knowledge of **Machine Learning**, including **Deep Learning** and **Neural Networks**
 
-<!-- **Python** -->
-<!-- :   Professional -->
-
-<!-- **C/C++** -->
-<!-- :   Professional -->
-
-<!-- **Fortran** -->
-<!-- :   Fluent -->
-
-<!-- **HPC** -->
-<!-- :   Fluent -->
-
-<!-- Programming and software fluency in {\em Python, C/C++, Fortran, \LaTeX} -->
-<!-- Experience with openMP and MPI parallel programming -->
-<!-- Experience with {\em Mathematica, MATLAB, HTML/CSS} -->
-
 Presentations
 -----
 * "Topics on Quantum Mechanics and Quantum Teleportation", review presentation at the concluding ceremony of Physics Summer School in Peking University, Jul. 2014
@@ -165,17 +145,13 @@ Presentations
 Outreach
 --------
 
-2020
-:   Lecture Assistant, GRAD-MAP Python Bootcamp, University of Maryland
+2020 &emsp; Lecture Assistant, GRAD-MAP Python Bootcamp, University of Maryland
 
-2018
-:   Lecture Assistant, GRAD-MAP Python Bootcamp, University of Maryland
+2018 &emsp; Lecture Assistant, GRAD-MAP Python Bootcamp, University of Maryland
 
-2017
-:   Maryland Day volunteer
+2017 &emsp; Maryland Day volunteer
 
-2015
-:   TAQ program
+2015 &emsp; TAQ program
 
 
 

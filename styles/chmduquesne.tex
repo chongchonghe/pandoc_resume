@@ -42,7 +42,8 @@ $endif$
 \setuphead[section]      [style=\tfd\bf, color=titlegrey, align=middle]
 \setuphead[subsection]   [style=\tfb\bf, color=sectioncolor, align=right,
   % before={\leavevmode\blackrule\hspace}
-  before={\hspace} % CCH: remove the rule before sections
+  % before={\hspace} % CCH: remove the rule before sections
+  after={\hspace\hrule\blank[4mm]}
 ]
 \setuphead[subsubsection][style=\bf]
 
@@ -57,7 +58,7 @@ $endif$
   [description]
   [headstyle=normal, style=normal,    %CCH: changed %headstyle to normal
     location=hanging, width=18mm, distance=14mm, margin=0cm,
-    % after={\vspace} % CCH: shrink spacing
+    before={\vspace} % CCH: shrink spacing
   ]
 
 \setupitemize[autointro, packed]    % prevent orphan list intro

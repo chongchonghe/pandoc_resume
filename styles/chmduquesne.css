@@ -34,9 +34,15 @@ h1 {
 h2 {
     /* This is called "sectioncolor" in the ConTeXt stylesheet. */
     color: #397249;
+    margin-bottom: 8px;
+}
+h2:after
+{
+    content:' ';
+    display:block;
+    border:1px solid #408052;
 }
 /* There is a bar just before each category */
-<<<<<<< HEAD
 /* h2:before { */
 /*     content: ""; */
 /*     display: inline-block; */
@@ -47,17 +53,6 @@ h2 {
 /*     /\* This is called "rulecolor" in the ConTeXt stylesheet. *\/ */
 /*     background-color: #9CB770; */
 /* } */
-=======
-h2:before {
-    content: "";
-    display: inline-block;
-    margin-right:1%;
-    width: 16%;
-    height: 10px;
-    /* This is called "rulecolor" in the ConTeXt stylesheet. */
-    background-color: #9CB770;
-}
->>>>>>> fe788ec3ea5457c0a834431165d3252dacc5fc03
 /* h2:hover { */
 /*     background-color: #397249; */
 /*     color: #FFFFFF; */
@@ -69,18 +64,14 @@ dt {				/*category left */
     float: left;
     clear: left;
     width: 17%;
-<<<<<<< HEAD
-    /* font-weight: bold;		/\* Uncommented to avoid bold year. Use bold when needed *\/ */
-=======
-    font-weight: bold;
->>>>>>> fe788ec3ea5457c0a834431165d3252dacc5fc03
+    /* font-weight: bold;	/\* Uncommented to avoid bold year. Use bold when needed *\/ */
 }
 dd {				/* category right */
     margin-left: 17%;
     margin-bottom:7px;
 }
 p {
-    margin-top:0;
+    margin-top:0px;
     margin-bottom:7px;
 }
 ul {
