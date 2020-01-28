@@ -36,6 +36,7 @@ h2 {
     color: #397249;
 }
 /* There is a bar just before each category */
+<<<<<<< HEAD
 /* h2:before { */
 /*     content: ""; */
 /*     display: inline-block; */
@@ -46,6 +47,17 @@ h2 {
 /*     /\* This is called "rulecolor" in the ConTeXt stylesheet. *\/ */
 /*     background-color: #9CB770; */
 /* } */
+=======
+h2:before {
+    content: "";
+    display: inline-block;
+    margin-right:1%;
+    width: 16%;
+    height: 10px;
+    /* This is called "rulecolor" in the ConTeXt stylesheet. */
+    background-color: #9CB770;
+}
+>>>>>>> fe788ec3ea5457c0a834431165d3252dacc5fc03
 /* h2:hover { */
 /*     background-color: #397249; */
 /*     color: #FFFFFF; */
@@ -57,7 +69,11 @@ dt {				/*category left */
     float: left;
     clear: left;
     width: 17%;
+<<<<<<< HEAD
     /* font-weight: bold;		/\* Uncommented to avoid bold year. Use bold when needed *\/ */
+=======
+    font-weight: bold;
+>>>>>>> fe788ec3ea5457c0a834431165d3252dacc5fc03
 }
 dd {				/* category right */
     margin-left: 17%;
