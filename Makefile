@@ -3,7 +3,8 @@ IN_DIR=markdown
 STYLES_DIR=styles
 STYLE=chmduquesne
 
-all: html pdf docx rtf
+#all: html pdf docx rtf
+all: html
 
 pdf: init
 	for f in $(IN_DIR)/*.md; do \
@@ -11,7 +12,7 @@ pdf: init
 		echo $$FILE_NAME.pdf; \
 		pandoc --standalone --template $(STYLES_DIR)/$(STYLE).tex \
 			--from markdown --to context \
-			--variable papersize=A4 \
+			--variable papersize=letter \
 			--output $(OUT_DIR)/$$FILE_NAME.tex $$f > /dev/null; \
 		mtxrun --path=$(OUT_DIR) --result=$$FILE_NAME.pdf --script context $$FILE_NAME.tex > $(OUT_DIR)/context_$$FILE_NAME.log 2>&1; \
 	done

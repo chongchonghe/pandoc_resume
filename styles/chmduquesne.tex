@@ -16,7 +16,8 @@ $endif$
 
 \setupcolor[hex]
 \definecolor[titlegrey][h=757575]
-\definecolor[sectioncolor][h=397249]
+\definecolor[sectioncolor][h=397249] % color of the the section names
+% \definecolor[sectioncolor][h=2f4d38] % CCH: make it darker
 \definecolor[rulecolor][h=9cb770]
 
 % Enable hyperlinks
@@ -25,21 +26,24 @@ $endif$
 \setuppapersize [$if(papersize)$$papersize$$else$letter$endif$][$if(papersize)$$papersize$$else$letter$endif$]
 \setuplayout    [width=middle, height=middle,
                  backspace=20mm, cutspace=0mm,
-                 topspace=10mm, bottomspace=20mm,
+                 topspace=20mm, bottomspace=20mm,
                  header=0mm, footer=0mm]
 
 %\setuppagenumbering[location={footer,center}]
 
 \setupbodyfont[11pt, helvetica]
 
-\setupwhitespace[medium]
+% \setupwhitespace[medium]
+\setupwhitespace[small]
 
 \setupblackrules[width=31mm, color=rulecolor]
 
 \setuphead[chapter]      [style=\tfd]
 \setuphead[section]      [style=\tfd\bf, color=titlegrey, align=middle]
 \setuphead[subsection]   [style=\tfb\bf, color=sectioncolor, align=right,
-                          before={\leavevmode\blackrule\hspace}]
+  % before={\leavevmode\blackrule\hspace}
+  before={\hspace} % CCH: remove the rule before sections
+]
 \setuphead[subsubsection][style=\bf]
 
 $if(number-sections)$
@@ -51,11 +55,17 @@ $endif$
 
 \definedescription
   [description]
-  [headstyle=bold, style=normal,
-   location=hanging, width=18mm, distance=14mm, margin=0cm]
+  [headstyle=normal, style=normal,    %CCH: changed %headstyle to normal
+    location=hanging, width=18mm, distance=14mm, margin=0cm,
+    % after={\vspace} % CCH: shrink spacing
+  ]
 
 \setupitemize[autointro, packed]    % prevent orphan list intro
 \setupitemize[indentnext=no]
+
+% CCH
+\setupitemize[each][1, packed]
+\setupitemize[before={\vspace}, after={\vspace}, margin=1em]
 
 \setupfloat[figure][default={here,nonumber}]
 \setupfloat[table][default={here,nonumber}]
