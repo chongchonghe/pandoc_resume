@@ -11,6 +11,7 @@
 /* Whole document */
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-family: Georgia; "Computer Modern"; sans-serif; */
     max-width: 800px;
     margin: auto;
     background: #FFFFFF;
@@ -24,6 +25,13 @@ h1 {
     text-align:center;
     margin-bottom:15px;
 }
+/* h1::before { */
+/*     content: "PDF"; */
+/*     display: block; */
+/*     text-align: right; */
+/*     color: black; */
+/*     font-size: medium; */
+/* } */
 /* h1:hover { */
 /*     background-color: #757575; */
 /*     color: #FFFFFF; */
@@ -60,14 +68,19 @@ h2:after
 /* } */
 
 /* Definitions (e.g. the years, 2018-2022) */
-dt {				/*category left */
-    float: left;
-    clear: left;
-    width: 17%;
+dt {				/*category 'year' */
+    /* float: left; */
+    /* clear: left; */
+    float: right;
+    clear: right;
+    width: 16%;
+    text-align: right;
     /* font-weight: bold;	/\* Uncommented to avoid bold year. Use bold when needed *\/ */
 }
-dd {				/* category right */
-    margin-left: 17%;
+dd {				/* category body */
+    /* margin-left: 13%; */
+    margin-left: 2%;
+    margin-right: 15%;
     margin-bottom:7px;
 }
 p {
@@ -75,8 +88,11 @@ p {
     margin-bottom:7px;
 }
 ul {
-  /* list-style-type: none; */
+    /* list-style-type: disc; */
     margin-top: 0;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+    padding-left: 0; 
 }
 
 /* Blockquotes */
@@ -90,10 +106,10 @@ a {
     color: #397249;
 }
 a:hover, a:active {
-    background-color: #397249;
-    color: #FFFFFF;
-    text-decoration: none;
-    text-shadow: 1px 1px 1px #333;
+    /* background-color: #397249; */
+    /* color: #FFFFFF; */
+    text-decoration: underline;
+    /* text-shadow: 1px 1px 1px #333; */
 }
 
 /* Horizontal separators */

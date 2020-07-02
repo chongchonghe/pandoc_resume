@@ -18,6 +18,7 @@ $endif$
 \definecolor[titlegrey][h=757575]
 \definecolor[sectioncolor][h=397249] % color of the the section names
 % \definecolor[sectioncolor][h=2f4d38] % CCH: make it darker
+% \definecolor[sectioncolor][black] % CCH: make it black
 \definecolor[rulecolor][h=9cb770]
 
 % Enable hyperlinks
@@ -31,7 +32,10 @@ $endif$
 
 %\setuppagenumbering[location={footer,center}]
 
-\setupbodyfont[11pt, helvetica]
+% \setupbodyfont[11pt, helvetica]
+% \setupbodyfont[11pt, Computer Modern]
+\setupbodyfont[11pt, Times]
+% \setupbodyfont[11pt, ]
 
 % \setupwhitespace[medium]
 \setupwhitespace[small]
@@ -43,7 +47,7 @@ $endif$
 \setuphead[subsection]   [style=\tfb\bf, color=sectioncolor, align=right,
   % before={\leavevmode\blackrule\hspace}
   % before={\hspace} % CCH: remove the rule before sections
-  after={\hspace\hrule\blank[4mm]}
+  after={\hspace\hrule\blank[4mm]} % space after section heading
 ]
 \setuphead[subsubsection][style=\bf]
 
@@ -56,9 +60,17 @@ $endif$
 
 \definedescription
   [description]
-  [headstyle=normal, style=normal,    %CCH: changed %headstyle to normal
-    location=hanging, width=18mm, distance=14mm, margin=0cm,
-    before={\vspace} % CCH: shrink spacing
+  [headstyle=normal, %CCH: changed %headstyle to normal (from bold?)
+    headalign=flushright,       %CCH: multiline flush right
+    alternative=right,          %CCH: align 'year' on the right
+    % location=hanging,
+    % location=left,
+    % width=12mm, margin=0cm,
+    % distance=10mm, 
+    % align=left,
+    % distance=0mm,
+    before={}, % CCH: shrink spacing of the two-column lists, or descriptions
+    after={} % CCH: shrink spacing
   ]
 
 \setupitemize[autointro, packed]    % prevent orphan list intro
@@ -66,7 +78,8 @@ $endif$
 
 % CCH
 \setupitemize[each][1, packed]
-\setupitemize[before={\vspace}, after={\vspace}, margin=1em]
+\setupitemize[each][inbetween={\blank[20mm]}]
+\setupitemize[before={\vspace}, after={}, margin=0em]
 
 \setupfloat[figure][default={here,nonumber}]
 \setupfloat[table][default={here,nonumber}]
