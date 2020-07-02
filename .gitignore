@@ -2,3 +2,11 @@
 *.swo
 *.swp
 _original_fork/
+
+output/CV.log
+output/CV.tex
+output/CV.tuc
+output/context_CV.log
+
+*.log
+*.tuc
